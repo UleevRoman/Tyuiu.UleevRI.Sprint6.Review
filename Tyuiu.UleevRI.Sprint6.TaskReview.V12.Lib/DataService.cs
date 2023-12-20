@@ -10,7 +10,7 @@ namespace Tyuiu.UleevRI.Sprint6.TaskReview.V12.Lib
     {
         public int CalculateMatrix(int[,] num, int n1, int n2, int c, int k, int l)
         {
-            int cnt = 0;
+            int cnt = k;
             int res = 0;
             for (int i = k; i < l + 1; i++)
             {

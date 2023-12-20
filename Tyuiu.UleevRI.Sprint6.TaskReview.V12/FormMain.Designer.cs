@@ -38,6 +38,7 @@ namespace Tyuiu.UleevRI.Sprint6.TaskReview.V12
             this.textBoxCondition_URI = new System.Windows.Forms.TextBox();
             this.panelResult_URI = new System.Windows.Forms.Panel();
             this.groupBoxPrint_URI = new System.Windows.Forms.GroupBox();
+            this.splitterData_URI = new System.Windows.Forms.Splitter();
             this.dataGridViewMatrix_URI = new System.Windows.Forms.DataGridView();
             this.textBoxN_URI = new System.Windows.Forms.TextBox();
             this.labelN_URI = new System.Windows.Forms.Label();
@@ -53,13 +54,14 @@ namespace Tyuiu.UleevRI.Sprint6.TaskReview.V12
             this.labelN2_URI = new System.Windows.Forms.Label();
             this.textBoxC_URI = new System.Windows.Forms.TextBox();
             this.labelC_URI = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelInputData_URI = new System.Windows.Forms.Panel();
             this.panelResultDone_URI = new System.Windows.Forms.Panel();
-            this.splitterResult_URI = new System.Windows.Forms.Splitter();
-            this.splitterData_URI = new System.Windows.Forms.Splitter();
-            this.textBoxResult_URI = new System.Windows.Forms.TextBox();
-            this.labelResult_URI = new System.Windows.Forms.Label();
             this.buttonDone_URI = new System.Windows.Forms.Button();
+            this.labelResult_URI = new System.Windows.Forms.Label();
+            this.textBoxResult_URI = new System.Windows.Forms.TextBox();
+            this.splitterResult_URI = new System.Windows.Forms.Splitter();
+            this.buttonGeneration_URI = new System.Windows.Forms.Button();
+            this.groupBoxData_URI = new System.Windows.Forms.GroupBox();
             this.panelMenu_URI.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panelCondirion_URI.SuspendLayout();
@@ -67,8 +69,9 @@ namespace Tyuiu.UleevRI.Sprint6.TaskReview.V12
             this.panelResult_URI.SuspendLayout();
             this.groupBoxPrint_URI.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMatrix_URI)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.panelInputData_URI.SuspendLayout();
             this.panelResultDone_URI.SuspendLayout();
+            this.groupBoxData_URI.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu_URI
@@ -87,14 +90,14 @@ namespace Tyuiu.UleevRI.Sprint6.TaskReview.V12
             this.toolStripMenuItemHelp_URI});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1214, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1214, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // toolStripMenuItemHelp_URI
             // 
             this.toolStripMenuItemHelp_URI.Name = "toolStripMenuItemHelp_URI";
-            this.toolStripMenuItemHelp_URI.Size = new System.Drawing.Size(118, 24);
+            this.toolStripMenuItemHelp_URI.Size = new System.Drawing.Size(118, 26);
             this.toolStripMenuItemHelp_URI.Text = "О программе";
             this.toolStripMenuItemHelp_URI.Click += new System.EventHandler(this.toolStripMenuItemHelp_URI_Click);
             // 
@@ -135,7 +138,7 @@ namespace Tyuiu.UleevRI.Sprint6.TaskReview.V12
             this.panelResult_URI.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelResult_URI.Location = new System.Drawing.Point(0, 128);
             this.panelResult_URI.Name = "panelResult_URI";
-            this.panelResult_URI.Size = new System.Drawing.Size(483, 622);
+            this.panelResult_URI.Size = new System.Drawing.Size(523, 591);
             this.panelResult_URI.TabIndex = 2;
             // 
             // groupBoxPrint_URI
@@ -146,10 +149,19 @@ namespace Tyuiu.UleevRI.Sprint6.TaskReview.V12
             this.groupBoxPrint_URI.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBoxPrint_URI.Location = new System.Drawing.Point(0, 0);
             this.groupBoxPrint_URI.Name = "groupBoxPrint_URI";
-            this.groupBoxPrint_URI.Size = new System.Drawing.Size(483, 622);
+            this.groupBoxPrint_URI.Size = new System.Drawing.Size(523, 591);
             this.groupBoxPrint_URI.TabIndex = 0;
             this.groupBoxPrint_URI.TabStop = false;
             this.groupBoxPrint_URI.Text = "Вывод данных:";
+            // 
+            // splitterData_URI
+            // 
+            this.splitterData_URI.Dock = System.Windows.Forms.DockStyle.Right;
+            this.splitterData_URI.Location = new System.Drawing.Point(517, 20);
+            this.splitterData_URI.Name = "splitterData_URI";
+            this.splitterData_URI.Size = new System.Drawing.Size(3, 568);
+            this.splitterData_URI.TabIndex = 1;
+            this.splitterData_URI.TabStop = false;
             // 
             // dataGridViewMatrix_URI
             // 
@@ -161,7 +173,7 @@ namespace Tyuiu.UleevRI.Sprint6.TaskReview.V12
             this.dataGridViewMatrix_URI.RowHeadersVisible = false;
             this.dataGridViewMatrix_URI.RowHeadersWidth = 51;
             this.dataGridViewMatrix_URI.RowTemplate.Height = 24;
-            this.dataGridViewMatrix_URI.Size = new System.Drawing.Size(477, 599);
+            this.dataGridViewMatrix_URI.Size = new System.Drawing.Size(517, 568);
             this.dataGridViewMatrix_URI.TabIndex = 0;
             // 
             // textBoxN_URI
@@ -182,35 +194,35 @@ namespace Tyuiu.UleevRI.Sprint6.TaskReview.V12
             // 
             // textBoxM_URI
             // 
-            this.textBoxM_URI.Location = new System.Drawing.Point(22, 115);
+            this.textBoxM_URI.Location = new System.Drawing.Point(21, 116);
             this.textBoxM_URI.Name = "textBoxM_URI";
             this.textBoxM_URI.Size = new System.Drawing.Size(270, 22);
             this.textBoxM_URI.TabIndex = 5;
             // 
             // textBoxK_URI
             // 
-            this.textBoxK_URI.Location = new System.Drawing.Point(22, 184);
+            this.textBoxK_URI.Location = new System.Drawing.Point(12, 54);
             this.textBoxK_URI.Name = "textBoxK_URI";
             this.textBoxK_URI.Size = new System.Drawing.Size(270, 22);
             this.textBoxK_URI.TabIndex = 6;
             // 
             // textBoxL_URI
             // 
-            this.textBoxL_URI.Location = new System.Drawing.Point(21, 245);
+            this.textBoxL_URI.Location = new System.Drawing.Point(12, 106);
             this.textBoxL_URI.Name = "textBoxL_URI";
             this.textBoxL_URI.Size = new System.Drawing.Size(270, 22);
             this.textBoxL_URI.TabIndex = 7;
             // 
             // textBoxN1_URI
             // 
-            this.textBoxN1_URI.Location = new System.Drawing.Point(21, 323);
+            this.textBoxN1_URI.Location = new System.Drawing.Point(21, 173);
             this.textBoxN1_URI.Name = "textBoxN1_URI";
             this.textBoxN1_URI.Size = new System.Drawing.Size(270, 22);
             this.textBoxN1_URI.TabIndex = 8;
             // 
             // textBoxN2_URI
             // 
-            this.textBoxN2_URI.Location = new System.Drawing.Point(22, 403);
+            this.textBoxN2_URI.Location = new System.Drawing.Point(21, 235);
             this.textBoxN2_URI.Name = "textBoxN2_URI";
             this.textBoxN2_URI.Size = new System.Drawing.Size(270, 22);
             this.textBoxN2_URI.TabIndex = 9;
@@ -218,7 +230,7 @@ namespace Tyuiu.UleevRI.Sprint6.TaskReview.V12
             // labelM_URI
             // 
             this.labelM_URI.AutoSize = true;
-            this.labelM_URI.Location = new System.Drawing.Point(18, 95);
+            this.labelM_URI.Location = new System.Drawing.Point(19, 84);
             this.labelM_URI.Name = "labelM_URI";
             this.labelM_URI.Size = new System.Drawing.Size(228, 17);
             this.labelM_URI.TabIndex = 10;
@@ -227,7 +239,7 @@ namespace Tyuiu.UleevRI.Sprint6.TaskReview.V12
             // labelK_URI
             // 
             this.labelK_URI.AutoSize = true;
-            this.labelK_URI.Location = new System.Drawing.Point(18, 164);
+            this.labelK_URI.Location = new System.Drawing.Point(9, 34);
             this.labelK_URI.Name = "labelK_URI";
             this.labelK_URI.Size = new System.Drawing.Size(84, 17);
             this.labelK_URI.TabIndex = 11;
@@ -236,7 +248,7 @@ namespace Tyuiu.UleevRI.Sprint6.TaskReview.V12
             // labelL_URI
             // 
             this.labelL_URI.AutoSize = true;
-            this.labelL_URI.Location = new System.Drawing.Point(18, 225);
+            this.labelL_URI.Location = new System.Drawing.Point(13, 86);
             this.labelL_URI.Name = "labelL_URI";
             this.labelL_URI.Size = new System.Drawing.Size(80, 17);
             this.labelL_URI.TabIndex = 12;
@@ -245,7 +257,7 @@ namespace Tyuiu.UleevRI.Sprint6.TaskReview.V12
             // labelN1_URI
             // 
             this.labelN1_URI.AutoSize = true;
-            this.labelN1_URI.Location = new System.Drawing.Point(18, 303);
+            this.labelN1_URI.Location = new System.Drawing.Point(19, 153);
             this.labelN1_URI.Name = "labelN1_URI";
             this.labelN1_URI.Size = new System.Drawing.Size(93, 17);
             this.labelN1_URI.TabIndex = 13;
@@ -254,7 +266,7 @@ namespace Tyuiu.UleevRI.Sprint6.TaskReview.V12
             // labelN2_URI
             // 
             this.labelN2_URI.AutoSize = true;
-            this.labelN2_URI.Location = new System.Drawing.Point(19, 383);
+            this.labelN2_URI.Location = new System.Drawing.Point(21, 215);
             this.labelN2_URI.Name = "labelN2_URI";
             this.labelN2_URI.Size = new System.Drawing.Size(93, 17);
             this.labelN2_URI.TabIndex = 14;
@@ -262,7 +274,7 @@ namespace Tyuiu.UleevRI.Sprint6.TaskReview.V12
             // 
             // textBoxC_URI
             // 
-            this.textBoxC_URI.Location = new System.Drawing.Point(21, 465);
+            this.textBoxC_URI.Location = new System.Drawing.Point(12, 170);
             this.textBoxC_URI.Name = "textBoxC_URI";
             this.textBoxC_URI.Size = new System.Drawing.Size(270, 22);
             this.textBoxC_URI.TabIndex = 15;
@@ -270,33 +282,29 @@ namespace Tyuiu.UleevRI.Sprint6.TaskReview.V12
             // labelC_URI
             // 
             this.labelC_URI.AutoSize = true;
-            this.labelC_URI.Location = new System.Drawing.Point(19, 448);
+            this.labelC_URI.Location = new System.Drawing.Point(13, 150);
             this.labelC_URI.Name = "labelC_URI";
             this.labelC_URI.Size = new System.Drawing.Size(86, 17);
             this.labelC_URI.TabIndex = 16;
             this.labelC_URI.Text = "Значение C";
             // 
-            // panel1
+            // panelInputData_URI
             // 
-            this.panel1.Controls.Add(this.labelN_URI);
-            this.panel1.Controls.Add(this.textBoxC_URI);
-            this.panel1.Controls.Add(this.labelC_URI);
-            this.panel1.Controls.Add(this.textBoxN_URI);
-            this.panel1.Controls.Add(this.labelM_URI);
-            this.panel1.Controls.Add(this.textBoxN2_URI);
-            this.panel1.Controls.Add(this.labelN2_URI);
-            this.panel1.Controls.Add(this.textBoxM_URI);
-            this.panel1.Controls.Add(this.labelN1_URI);
-            this.panel1.Controls.Add(this.textBoxN1_URI);
-            this.panel1.Controls.Add(this.labelK_URI);
-            this.panel1.Controls.Add(this.labelL_URI);
-            this.panel1.Controls.Add(this.textBoxK_URI);
-            this.panel1.Controls.Add(this.textBoxL_URI);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(483, 128);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(387, 622);
-            this.panel1.TabIndex = 17;
+            this.panelInputData_URI.Controls.Add(this.groupBoxData_URI);
+            this.panelInputData_URI.Controls.Add(this.buttonGeneration_URI);
+            this.panelInputData_URI.Controls.Add(this.labelN_URI);
+            this.panelInputData_URI.Controls.Add(this.textBoxN_URI);
+            this.panelInputData_URI.Controls.Add(this.labelM_URI);
+            this.panelInputData_URI.Controls.Add(this.textBoxN2_URI);
+            this.panelInputData_URI.Controls.Add(this.labelN2_URI);
+            this.panelInputData_URI.Controls.Add(this.textBoxN1_URI);
+            this.panelInputData_URI.Controls.Add(this.textBoxM_URI);
+            this.panelInputData_URI.Controls.Add(this.labelN1_URI);
+            this.panelInputData_URI.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelInputData_URI.Location = new System.Drawing.Point(523, 128);
+            this.panelInputData_URI.Name = "panelInputData_URI";
+            this.panelInputData_URI.Size = new System.Drawing.Size(387, 591);
+            this.panelInputData_URI.TabIndex = 17;
             // 
             // panelResultDone_URI
             // 
@@ -305,49 +313,17 @@ namespace Tyuiu.UleevRI.Sprint6.TaskReview.V12
             this.panelResultDone_URI.Controls.Add(this.textBoxResult_URI);
             this.panelResultDone_URI.Controls.Add(this.splitterResult_URI);
             this.panelResultDone_URI.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelResultDone_URI.Location = new System.Drawing.Point(870, 128);
+            this.panelResultDone_URI.Location = new System.Drawing.Point(910, 128);
             this.panelResultDone_URI.Name = "panelResultDone_URI";
-            this.panelResultDone_URI.Size = new System.Drawing.Size(344, 622);
+            this.panelResultDone_URI.Size = new System.Drawing.Size(304, 591);
             this.panelResultDone_URI.TabIndex = 18;
-            // 
-            // splitterResult_URI
-            // 
-            this.splitterResult_URI.Location = new System.Drawing.Point(0, 0);
-            this.splitterResult_URI.Name = "splitterResult_URI";
-            this.splitterResult_URI.Size = new System.Drawing.Size(3, 622);
-            this.splitterResult_URI.TabIndex = 0;
-            this.splitterResult_URI.TabStop = false;
-            // 
-            // splitterData_URI
-            // 
-            this.splitterData_URI.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitterData_URI.Location = new System.Drawing.Point(477, 20);
-            this.splitterData_URI.Name = "splitterData_URI";
-            this.splitterData_URI.Size = new System.Drawing.Size(3, 599);
-            this.splitterData_URI.TabIndex = 1;
-            this.splitterData_URI.TabStop = false;
-            // 
-            // textBoxResult_URI
-            // 
-            this.textBoxResult_URI.Location = new System.Drawing.Point(57, 244);
-            this.textBoxResult_URI.Name = "textBoxResult_URI";
-            this.textBoxResult_URI.Size = new System.Drawing.Size(256, 22);
-            this.textBoxResult_URI.TabIndex = 1;
-            // 
-            // labelResult_URI
-            // 
-            this.labelResult_URI.AutoSize = true;
-            this.labelResult_URI.Location = new System.Drawing.Point(57, 221);
-            this.labelResult_URI.Name = "labelResult_URI";
-            this.labelResult_URI.Size = new System.Drawing.Size(76, 17);
-            this.labelResult_URI.TabIndex = 2;
-            this.labelResult_URI.Text = "Результат";
             // 
             // buttonDone_URI
             // 
+            this.buttonDone_URI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonDone_URI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.buttonDone_URI.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonDone_URI.Location = new System.Drawing.Point(138, 564);
+            this.buttonDone_URI.Location = new System.Drawing.Point(98, 533);
             this.buttonDone_URI.Name = "buttonDone_URI";
             this.buttonDone_URI.Size = new System.Drawing.Size(194, 46);
             this.buttonDone_URI.TabIndex = 3;
@@ -355,13 +331,63 @@ namespace Tyuiu.UleevRI.Sprint6.TaskReview.V12
             this.buttonDone_URI.UseVisualStyleBackColor = false;
             this.buttonDone_URI.Click += new System.EventHandler(this.buttonDone_URI_Click);
             // 
+            // labelResult_URI
+            // 
+            this.labelResult_URI.AutoSize = true;
+            this.labelResult_URI.Location = new System.Drawing.Point(20, 225);
+            this.labelResult_URI.Name = "labelResult_URI";
+            this.labelResult_URI.Size = new System.Drawing.Size(76, 17);
+            this.labelResult_URI.TabIndex = 2;
+            this.labelResult_URI.Text = "Результат";
+            // 
+            // textBoxResult_URI
+            // 
+            this.textBoxResult_URI.Location = new System.Drawing.Point(23, 245);
+            this.textBoxResult_URI.Name = "textBoxResult_URI";
+            this.textBoxResult_URI.Size = new System.Drawing.Size(256, 22);
+            this.textBoxResult_URI.TabIndex = 1;
+            // 
+            // splitterResult_URI
+            // 
+            this.splitterResult_URI.Location = new System.Drawing.Point(0, 0);
+            this.splitterResult_URI.Name = "splitterResult_URI";
+            this.splitterResult_URI.Size = new System.Drawing.Size(3, 591);
+            this.splitterResult_URI.TabIndex = 0;
+            this.splitterResult_URI.TabStop = false;
+            // 
+            // buttonGeneration_URI
+            // 
+            this.buttonGeneration_URI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonGeneration_URI.Location = new System.Drawing.Point(15, 283);
+            this.buttonGeneration_URI.Name = "buttonGeneration_URI";
+            this.buttonGeneration_URI.Size = new System.Drawing.Size(194, 43);
+            this.buttonGeneration_URI.TabIndex = 4;
+            this.buttonGeneration_URI.Text = "Сгенерировать матрицу";
+            this.buttonGeneration_URI.UseVisualStyleBackColor = false;
+            this.buttonGeneration_URI.Click += new System.EventHandler(this.buttonGeneration_URI_Click);
+            // 
+            // groupBoxData_URI
+            // 
+            this.groupBoxData_URI.Controls.Add(this.textBoxK_URI);
+            this.groupBoxData_URI.Controls.Add(this.labelK_URI);
+            this.groupBoxData_URI.Controls.Add(this.labelL_URI);
+            this.groupBoxData_URI.Controls.Add(this.textBoxC_URI);
+            this.groupBoxData_URI.Controls.Add(this.labelC_URI);
+            this.groupBoxData_URI.Controls.Add(this.textBoxL_URI);
+            this.groupBoxData_URI.Location = new System.Drawing.Point(21, 347);
+            this.groupBoxData_URI.Name = "groupBoxData_URI";
+            this.groupBoxData_URI.Size = new System.Drawing.Size(351, 232);
+            this.groupBoxData_URI.TabIndex = 17;
+            this.groupBoxData_URI.TabStop = false;
+            this.groupBoxData_URI.Text = "Ввод данных";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1214, 750);
+            this.ClientSize = new System.Drawing.Size(1214, 719);
             this.Controls.Add(this.panelResultDone_URI);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelInputData_URI);
             this.Controls.Add(this.panelResult_URI);
             this.Controls.Add(this.panelCondirion_URI);
             this.Controls.Add(this.panelMenu_URI);
@@ -379,10 +405,12 @@ namespace Tyuiu.UleevRI.Sprint6.TaskReview.V12
             this.panelResult_URI.ResumeLayout(false);
             this.groupBoxPrint_URI.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMatrix_URI)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelInputData_URI.ResumeLayout(false);
+            this.panelInputData_URI.PerformLayout();
             this.panelResultDone_URI.ResumeLayout(false);
             this.panelResultDone_URI.PerformLayout();
+            this.groupBoxData_URI.ResumeLayout(false);
+            this.groupBoxData_URI.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -413,12 +441,14 @@ namespace Tyuiu.UleevRI.Sprint6.TaskReview.V12
         private System.Windows.Forms.Label labelN2_URI;
         private System.Windows.Forms.TextBox textBoxC_URI;
         private System.Windows.Forms.Label labelC_URI;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelInputData_URI;
         private System.Windows.Forms.Panel panelResultDone_URI;
         private System.Windows.Forms.Splitter splitterResult_URI;
         private System.Windows.Forms.Button buttonDone_URI;
         private System.Windows.Forms.Label labelResult_URI;
         private System.Windows.Forms.TextBox textBoxResult_URI;
+        private System.Windows.Forms.GroupBox groupBoxData_URI;
+        private System.Windows.Forms.Button buttonGeneration_URI;
     }
 }
 

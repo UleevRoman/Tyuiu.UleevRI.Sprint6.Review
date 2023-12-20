@@ -120,11 +120,8 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="textBoxCondition_URI.Text" xml:space="preserve">
-    <value>Найти количество элемемнтов с нечетными номерами от k до l (нумерация начинается с нуля) в массива n * m,
+    <value>Найти количество элементов с нечетными номерами от k до l (нумерация начинается с нуля) в массиве n * m,
 заполненым рандомными  числами от n1 до n2,  с чередованием через три значения суммой трех предыдущих значений 
 в строках и в заданном столбце C.
 </value>
